@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import StudentInfo from "../StudentInfo";
 
 const Page = () => {
@@ -5,6 +6,7 @@ const Page = () => {
     <section>
       <h2>My Shopping List</h2>
       <StudentInfo />
+      <Link href="/">Back</Link>
     </section>
   );
 }
