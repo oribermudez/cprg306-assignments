@@ -1,22 +1,18 @@
+import Link from 'next/link';
+
 const StudentInfo = () => {
   return (
-    <section>
-      <h1>Ori Bermudez</h1>
-      <div className="flex">
-        <h2>Course section:</h2>
-        <span>CPRG 306 A</span>
-      </div>
-      <div className="flex">
-        <h2>GitHub repository:</h2>
-        <a
-            href="https://github.com/oribermudez"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Ori Bermudez
-        </a>
-      </div>
-    </section>
+    <div>
+      <p className='text-gray-400'>CPRG-306 B</p>
+      <p className="text-violet-500 mt-3">By Ori Bermudez</p>
+      <Link
+        href="https://github.com/oribermudez"
+        className="mt-7 inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
+        target="_blank"
+      >
+        GitHub Repository
+      </Link>
+    </div>
   );
 }
 
