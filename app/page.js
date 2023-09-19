@@ -14,7 +14,6 @@ export default function Home() {
             <Link
               href="/week2"
               className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
-              target="_blank"
             >
               Week 2
             </Link>
