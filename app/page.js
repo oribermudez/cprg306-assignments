@@ -11,12 +11,20 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Web Development 2</h1>
             <p className="mt-4 text-xl text-gray-500">On this page you will find all the assignments for Web Development class.</p>
             <StudentInfo />
-            <Link
-              href="/week2"
-              className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
-            >
-              Week 2
-            </Link>
+            <div className="flex flex-col gap-1">
+              <Link
+                href="/week2"
+                className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
+              >
+                Week 2
+              </Link>
+              <Link
+                href="/week3"
+                className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
+              >
+                Week 3
+              </Link>
+            </div>
           </div>
           <div>
             <div className="mt-10">
