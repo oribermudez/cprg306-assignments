@@ -31,6 +31,12 @@ export default function Home() {
               >
                 Week 4
               </Link>
+              <Link
+                href="/week5"
+                className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
+              >
+                Week 5
+              </Link>
             </div>
             <HeroGrid />
           </div>
