@@ -1,0 +1,26 @@
+[
+  {
+    "id": "assignment-2",
+    "name": "Week 2",
+    "url": "/week2",
+    "image": "/assets/week2.jpg"
+  },
+  {
+    "id": "assignment-3",
+    "name": "Week 3",
+    "url": "/week3",
+    "image": "/assets/week3.jpg"
+  },
+  {
+    "id": "assignment-4",
+    "name": "Week 4",
+    "url": "/week4",
+    "image": "/assets/week4.jpg"
+  },
+  {
+    "id": "assignment-5",
+    "name": "Week 5",
+    "url": "/week5",
+    "image": "/assets/week5.jpg"
+  }
+]

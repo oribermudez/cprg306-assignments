@@ -7,7 +7,7 @@ const Page = () => {
       <h1 className='text-cyan-500 text-3xl font-bold m-2'>My Shopping List</h1>
       <ItemList />
       <Link
-        href="/"
+        href="/assignments"
         className="mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
       >
         Back

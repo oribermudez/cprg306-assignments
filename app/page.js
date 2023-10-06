@@ -14,28 +14,10 @@ export default function Home() {
             <StudentInfo />
             <div className="flex flex-col gap-1">
               <Link
-                href="/week2"
-                className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
+                href="/assignments"
+                className="w-full mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
               >
-                Week 2
-              </Link>
-              <Link
-                href="/week3"
-                className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
-              >
-                Week 3
-              </Link>
-              <Link
-                href="/week4"
-                className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
-              >
-                Week 4
-              </Link>
-              <Link
-                href="/week5"
-                className="w-2/5 mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
-              >
-                Week 5
+                Assignments
               </Link>
             </div>
             <HeroGrid />
