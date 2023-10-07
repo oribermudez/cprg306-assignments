@@ -29,7 +29,7 @@ const ItemList = () => {
     </div>
     <ul className="flex flex-col mt-6 w-80 lg:w-96">
       {items.sort((a,b) => a[sortBy].localeCompare(b[sortBy])).map((item, index) => {
-        return <Item key={`${index}-${item.quantity}`} name={item.name} quantity={item.quantity} category={item.category} />
+        return <Item key={`${index}-${item.quantity}`} name={item.name} quantity={item.quantity} category={item.category} icon={item.icon}/>
       })}
     </ul>
     </>

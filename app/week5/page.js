@@ -3,7 +3,7 @@ import ItemList from './item-list';
 
 const Page = () => {
   return (
-    <main className="bg-gray-100 w-screen h-screen overflow-scroll p-5">
+    <main className="bg-slate-50 w-screen h-screen overflow-scroll p-5">
       <h1 className='text-cyan-500 text-3xl font-bold m-2'>Shopping List</h1>
      <ItemList />
       <Link
