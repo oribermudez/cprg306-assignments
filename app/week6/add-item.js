@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from 'react';
-import Modal from './modal';// Create the Modal component
+import Modal from './modal';
 
-export default function ButtonWithModal() {
+const AddItem = ({ onAddItem }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -22,7 +22,9 @@ export default function ButtonWithModal() {
       >
         Add Item
       </button>
-      {isModalOpen && <Modal onClose={closeModal} />}
+      {isModalOpen && <Modal onClose={closeModal} onAddItem={onAddItem} />}
     </div>
   );
 }
+
+export default AddItem;

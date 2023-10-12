@@ -2,22 +2,23 @@
 
 import React, { useState } from 'react';
 
-function NewItem({ onClose }) {
+function NewItem({ onClose, onAddItem }) {
   const [name, setName] = useState('');
   const [quantity, setQuantity] = useState(1);
   const [category, setCategory] = useState('produce');
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const item = {
+    onAddItem({
       name,
       quantity,
       category,
-    };
-    console.log(item);
-    alert(`Added item: \n--> Name: ${name} \n--> Quantity: ${quantity} \n--> Category: ${category}`);
+      icon: '🍎',
+    });
     setName('');
     setQuantity(1);
     setCategory('produce');
+    onClose();
   };
 
   return (
