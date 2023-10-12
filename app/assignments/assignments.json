@@ -22,5 +22,11 @@
     "name": "Week 5",
     "url": "/week5",
     "image": "/assets/week5.jpg"
+  },
+  {
+    "id": "assignment-6",
+    "name": "Week 6",
+    "url": "/week6",
+    "image": "/assets/week6.jpg"
   }
 ]
