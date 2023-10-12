@@ -1,6 +1,7 @@
 ## Live App
 
-You can find my app in the following link: https://cprg306-assignments-one.vercel.app/
+You can find my app in the following link: https://cprg306-assignments-oribermudez.vercel.app/
+
 
 ## Getting Started
 
