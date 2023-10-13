@@ -1,6 +1,6 @@
 # Web Development Assignments Repository
 
-Welcome to my web development assignments repository! I'm a student at the Southern Alberta Institute of Technology, and this repository contains all of my assignments for the web development course. I'm a creative, intense, and relentless individual who is committed to achieving my goals, and I aim to reflect these qualities in each of my projects.
+Welcome to my web development assignments repository! I'm a student at the Southern Alberta Institute of Technology, and this repository contains all of my assignments for the web development course.
 
 ## About
 
