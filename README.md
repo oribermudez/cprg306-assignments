@@ -1,37 +1,53 @@
-## Live App
+# Web Development Assignments Repository
 
-You can find my app in the following link: https://cprg306-assignments-oribermudez.vercel.app/
+Welcome to my web development assignments repository! I'm a student at the Southern Alberta Institute of Technology, and this repository contains all of my assignments for the web development course. I'm a creative, intense, and relentless individual who is committed to achieving my goals, and I aim to reflect these qualities in each of my projects.
 
+## About
 
-## Getting Started
+- **Student:** Ori Bermudez
+- **Institution:** Southern Alberta Institute of Technology (SAIT)
+- **Course:** Web Development
 
-First, run the development server:
+## Project Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+This repository serves as a collection of web development assignments completed during my course at SAIT. I have designed and built these projects to demonstrate my creativity and dedication. They are designed to work seamlessly on both mobile and desktop devices.
+
+## How to Run the Project
+
+To run this project locally on your machine, follow these steps:
+
+1. **Clone the Repository:**
+
+```
+git clone https://github.com/oribermudez/cprg306-assignments.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Node.js:**
+If you don't already have Node.js installed, download and install it from the official [Node.js website](https://nodejs.org/).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. **Install Dependencies:**
+Navigate to the project directory and install the required dependencies using npm or yarn.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+cd cprg306-assignments
+npm install
+```
 
-## Learn More
+4. **Run the Project:**
+Start the development server.
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **View the Project Locally:**
+Open your web browser and go to `http://localhost:3000` to view the project locally.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Live Demo
 
-## Deploy on Vercel
+You can also view a live demo of the project by visiting the following link:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[Live Demo](https://cprg306-assignments-oribermudez.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Thank you for taking the time to check out my projects!
