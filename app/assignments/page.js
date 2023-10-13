@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <main className="bg-gray-100 w-screen h-screen overflow-scroll p-5">
       <h1 className='text-cyan-500 text-3xl font-bold m-2'>Assignments</h1>
-      <div className='flex gap-6 flex-wrap justify-center mt-16'>
+      <div className='flex gap-6 flex-wrap justify-center my-16'>
         {assignments.map((assignment => {
           return(
             <Card key={assignment.id} url={assignment.url} image={assignment.image} name={assignment.name}/>
