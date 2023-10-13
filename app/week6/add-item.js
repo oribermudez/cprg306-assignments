@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Modal from './modal';
+import NewItem from './new-item';
 
 const AddItem = ({ onAddItem }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,11 +19,15 @@ const AddItem = ({ onAddItem }) => {
     <div>
       <button
         onClick={openModal}
-        className="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="w-full lg:w-48 bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-3 px-5 rounded-lg focus:outline-none focus:shadow-outline"
       >
         Add Item
       </button>
-      {isModalOpen && <Modal onClose={closeModal} onAddItem={onAddItem} />}
+      {isModalOpen && (
+        <Modal onClose={closeModal}>
+          <NewItem onClose={closeModal} onAddItem={onAddItem} />
+        </Modal>
+      )}
     </div>
   );
 }

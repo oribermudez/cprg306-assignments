@@ -21,7 +21,7 @@ const handleAddItem = (item) => {
      <AddItem onAddItem={handleAddItem} />
       <Link
         href="/assignments"
-        className="mt-7 inline-block rounded-md border border-transparent bg-cyan-400 px-8 py-3 text-center font-medium text-white hover:bg-cyan-500"
+        className="w-full lg:w-48 mt-7 inline-block rounded-lg border border-transparent bg-gray-400 py-3 px-5 text-center font-medium text-white hover:bg-gray-500"
       >
         Back
       </Link>

@@ -24,7 +24,7 @@ const NewItem =({ onClose, onAddItem }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md w-96 z-50">
+    <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md lg:w-96 z-50 w-72">
       <div className="mb-4 relative">
         <label
           htmlFor="name"
