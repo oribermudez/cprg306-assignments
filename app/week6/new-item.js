@@ -1,8 +1,9 @@
 "use client"
 
 import React, { useState } from 'react';
+import { categoryOptions, categoryIcons } from './categories';
 
-function NewItem({ onClose, onAddItem }) {
+const NewItem =({ onClose, onAddItem }) => {
   const [name, setName] = useState('');
   const [quantity, setQuantity] = useState(1);
   const [category, setCategory] = useState('produce');
@@ -10,10 +11,11 @@ function NewItem({ onClose, onAddItem }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     onAddItem({
+      id: `${name}-${Date.now()}`,
       name,
       quantity,
       category,
-      icon: '🍎',
+      icon: categoryIcons[category],
     });
     setName('');
     setQuantity(1);
@@ -74,17 +76,9 @@ function NewItem({ onClose, onAddItem }) {
           onChange={(e) => setCategory(e.target.value)}
           className="w-full px-2 py-1 border-b-2 text-gray-600 text-sm border-gray-300 focus:border-cyan-500 bg-white focus:outline-none pt-4"
         >
-          <option value="produce">Produce</option>
-          <option value="dairy">Dairy</option>
-          <option value="bakery">Bakery</option>
-          <option value="meat">Meat</option>
-          <option value="frozen">Frozen Foods</option>
-          <option value="canned">Canned Goods</option>
-          <option value="dry">Dry Goods</option>
-          <option value="beverages">Beverages</option>
-          <option value="snacks">Snacks</option>
-          <option value="household">Household</option>
-          <option value="other">Other</option>
+          {categoryOptions.map((option) => {
+            return <option key={option.value} value={option.value}>{option.name}</option>
+          })}
         </select>
       </div>
 
