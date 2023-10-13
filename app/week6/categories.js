@@ -13,13 +13,13 @@ export const categoryOptions = [
 ];
 
 export const categoryIcons = {
-  produce: '🥦',
-  dairy: '🥛',
-  bakery: '🍞',
+  produce: '🍎',
+  dairy: '🐮',
+  bakery: '🥐',
   meat: '🥩',
   frozen: '❄️',
   canned: '🥫',
-  dry: '📦',
+  dry: '🥣',
   beverages: '🥤',
   snacks: '🍿',
   household: '🏠',
