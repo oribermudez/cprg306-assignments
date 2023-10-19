@@ -10,7 +10,7 @@ const MealsList = ({ ingredient }) => {
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
     const data = await response.json();
     const { strInstructions } = data.meals[0];
-    const sanitizedRecipe = await strInstructions.split(/\./);
+    const sanitizedRecipe = await strInstructions.trim().split(/\./);
     setRecipe(sanitizedRecipe);
   }
 
@@ -38,15 +38,16 @@ const MealsList = ({ ingredient }) => {
               className={`text-black bg-white border-b border-grey-300 p-4 cursor-pointer transition transform hover:scale-10`}
               onClick={() => toggleAccordion(meal.idMeal)}
             >
-              <span className="text-sm font-semibold">{index + 1}. {meal.strMeal}</span>
+              <span className={`${openMealId === meal.idMeal ? 'text-md text-cyan-400' : 'text-sm'} font-semibold`}>{index + 1}. {meal.strMeal}</span>
               {openMealId === meal.idMeal && (
                 <div className="mt-4 flex flex-col gap-4">
-                  <Image src={meal.strMealThumb} width={300} height={300} alt={meal.strMeal} />
-                  <div className='flex flex-col'>
+                  <Image src={meal.strMealThumb} width={300} height={300} alt={meal.strMeal} className='shadow-md rounded-md'/>
+                  <h3 className="text-md font-semibold text-black">Instructions</h3>
+                  <ul className='flex flex-col pl-3'>
                     {recipe.map((step, index) => (
-                      <p key={index} className="mt-4 text-sm text-black">{step}</p>
+                      <li key={index} className={`mt-4 text-sm text-gray-500 list-disc list-inside ${!step && 'hidden'}`}>{step}</li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               )}
             </li>
