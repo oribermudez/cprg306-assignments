@@ -4,7 +4,7 @@ import { capitalize } from "./helpers";
 const Item = ({ name, quantity, category, icon, onSelect }) => {
   return (
     <li
-      className={`bg-white shadow-md rounded-md p-4 mt-3 transition-transform transform hover:-translate-y-1 hover:scale-105 border-l-4 ${categories[category].border}`}
+      className={`bg-white shadow-md rounded-md p-4 mt-3 transition-transform transform hover:-translate-y-1 hover:scale-105 border-l-4 ${categories[category].border} cursor-pointer`}
       onClick={() => onSelect(name)}
     >
       <div className="flex items-center">
