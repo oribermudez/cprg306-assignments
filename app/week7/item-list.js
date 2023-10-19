@@ -5,7 +5,7 @@ import { useState } from "react";
 import Item from "./item";
 import AddItem from "./add-item";
 
-const ItemList = ({ items, onAddItem }) => {
+const ItemList = ({ items, onAddItem, onItemSelect }) => {
   const [sortBy, setSortBy] = useState('name');
 
   return (
@@ -43,6 +43,7 @@ const ItemList = ({ items, onAddItem }) => {
                 quantity={item.quantity}
                 category={item.category}
                 icon={item.icon}
+                onSelect={onItemSelect}
               />
             );
           })}

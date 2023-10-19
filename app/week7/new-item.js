@@ -31,7 +31,7 @@ const NewItem =({ onClose, onAddItem }) => {
         <label
           htmlFor="name"
           className={`absolute left-2 ${
-            name ? 'text-gray-600 text-xs' : 'text-gray-400 text-lg'
+            name ? 'text-gray-600 text-xs' : 'text-gray-400 text-md'
           } transition-all pointer-events-none`}
         >
           Item Name

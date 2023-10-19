@@ -1,9 +1,12 @@
 import categories from "./categories";
 import { capitalize } from "./helpers";
 
-const Item = ({ name, quantity, category, icon }) => {
+const Item = ({ name, quantity, category, icon, onSelect }) => {
   return (
-    <li className={`bg-white shadow-md rounded-md p-4 mt-3 transition-transform transform hover:-translate-y-1 hover:scale-105 border-l-4 ${categories[category].border}`}>
+    <li
+      className={`bg-white shadow-md rounded-md p-4 mt-3 transition-transform transform hover:-translate-y-1 hover:scale-105 border-l-4 ${categories[category].border}`}
+      onClick={() => onSelect(name)}
+    >
       <div className="flex items-center">
         <div className="w-14 h-14 bg-gray-100/50 text-white flex justify-center items-center rounded-full">
           {icon}
