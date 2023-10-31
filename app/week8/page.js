@@ -2,15 +2,19 @@
 
 import { useUserAuth } from "./_utils/auth-context";
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
+
 import Image from "next/image";
 
 const Login = () => {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+  const router = useRouter();
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
 
   const handleGitHubSignIn = async () => {
     await gitHubSignIn();
+    router.push('/');
   };
 
   const handleFirebaseSignOut = async () => {
@@ -18,11 +22,11 @@ const Login = () => {
   };
 
   return (
-    <div className="grid grid-cols-2">
-      <div className="flex justify-center items-center bg-[#27DCDD]">
+    <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="flex justify-center items-center bg-[#29DDDE]">
         <Image src="/assets/login.jpg" width={400} height={400} alt={name} />
       </div>
-      <div className="min-h-screen flex items-center justify-center bg-slate-50 text-gray-900">
+      <div className="md:min-h-screen flex items-center justify-center bg-slate-50 text-gray-900">
         <div className="bg-white p-8 rounded-lg shadow-md w-[400px]">
           {user ? (
             <>
@@ -78,7 +82,7 @@ const Login = () => {
 
               <button
                 onClick={handleGitHubSignIn}
-                className="mt-8 bg-cyan-500 text-white font-semibold px-4 py-2 rounded hover:bg-gray-800 w-full flex gap-4 justify-center items-center"
+                className="mt-8 bg-cyan-500 text-white font-semibold px-4 py-2 rounded hover:bg-cyan-400 w-full flex gap-4 justify-center items-center"
               >
                 Sign In
               </button>
