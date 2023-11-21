@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleGitHubSignIn = async () => {
     await gitHubSignIn();
-    router.push('/');
+    router.push('/week10');
   };
 
   const handleFirebaseSignOut = async () => {
